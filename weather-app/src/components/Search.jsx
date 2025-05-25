@@ -22,7 +22,7 @@ const Search = ({onSearch}) => {
         onChange={(e) => setCity(e.target.value)}
         className="w-full focus:outline-none"
       />
-      <button className="cursor-pointer">
+      <button type="submit" className="cursor-pointer">
         <FcSearch
           size={20}
         />

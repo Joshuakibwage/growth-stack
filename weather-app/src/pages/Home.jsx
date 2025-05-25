@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
+import Search from '../components/Search';
 import { fetchWeather } from '../services/weatherService';
+import WeatherCard from '../components/WeatherCard';
 
 
 
@@ -28,8 +29,12 @@ const Home = () => {
 
 
   return (
-    <main className=" min-h-screen bg-black">
-      <Navbar onSearch={handleSearch}/>
+    <main className=" min-h-screen bg-gradient-to-r from-blue-300 to-blue-600 text-white flex flex-col items-center p-4">
+      <h1 className="text-3xl font-bold">Weather App</h1>
+      <Search onSearch={handleSearch}/>
+      {loading && <p className="mt-4">Loading...</p>}
+      {error && <p className="mt-4 text-red-200">{error}</p>}
+      {weather && <WeatherCard weather={weather} />}
     </main>
   )
 }
