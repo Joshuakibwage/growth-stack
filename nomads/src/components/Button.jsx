@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({className, label}) => {
   return (
-    <div>
-      
-    </div>
+    <button className={className}>
+      {label}
+    </button>
   )
 }
 
