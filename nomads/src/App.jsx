@@ -1,10 +1,14 @@
 import React from 'react'
-import Landing from './pages/Landing';
+import { Outlet } from 'react-router-dom';
+import Navbar from './components/Navbar';
+
+
 
 const App = () => {
   return (
     <div>
-      <Landing />
+      <Navbar />
+      <Outlet />
     </div>
   )
 }

@@ -1,22 +1,26 @@
 export const navLinks = [
     { 
-        href: "#home", 
+        path: "/", 
         label: "Home" 
     },
     { 
-        href: "destinations", 
+        path: "/destinations", 
         label: "Destinations" 
     },
     { 
-        href: "#explore", 
+        path: "/explore", 
         label: "Explore" 
     },
     { 
-        href: "#itineraries", 
+        path: "/itineraries", 
         label: "Itinerary" 
     },
     {
-        href: "#blog",
+        path: "/blogs",
         label: "Blogs"
+    },
+    {
+        path: "/about",
+        label: "About"
     }
 ];
