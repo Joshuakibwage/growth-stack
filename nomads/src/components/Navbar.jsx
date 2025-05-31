@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full ">
-       <div className="flex items-center justify-between w-[80%] mx-auto py-4 border-b border-gray-200">
+       <div className="flex items-center justify-between w-[90%] mx-auto py-4 border-b border-gray-200">
             <div>
             
             {/* logo */}
@@ -66,7 +66,7 @@ const Navbar = () => {
        <div className="">
             {
                 nav && (
-                    <nav className="flex flex-col ml-9 mt-4 gap-6">
+                    <nav className="flex flex-col items-center justify-center w-full z-40">
                         <div className="flex md:hidden">
                             <ul className="flex flex-col space-y-4">
                                 {
@@ -74,6 +74,7 @@ const Navbar = () => {
                                         <li 
                                         key={idx}
                                         className="text-xl font-semibold"
+                                        onClick={handleNav}
                                         >
                                             {link.label}
                                         </li>
@@ -83,7 +84,7 @@ const Navbar = () => {
                         </div>
 
                         {/* login button */}
-                        <div className="space-x-4 flex md:hidden flex-col">
+                        <div className="w-full space-x-4 flex md:hidden flex-col items-center justify-center">
                             <Button 
                                 label="Log In"
                                 className="cursor-pointer"
