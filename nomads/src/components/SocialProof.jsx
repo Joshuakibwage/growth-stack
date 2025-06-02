@@ -53,7 +53,7 @@ const SocialProof = () => {
           <img 
             src={hammock} 
             alt="Girl on hammock" 
-            className="w-full h-[600px] object-cover object-center shadow-xl"
+            className="w-full h-[400px] sm:h-[550px] object-cover object-center shadow-xl"
             loading="lazy"
           />
       </div> 
